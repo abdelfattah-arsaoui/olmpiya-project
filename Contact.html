@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <!-- header section -->
+      <section class="sub-header">
+        <nav>
+          <a href="altisia.html">
+            <img src="images/Image1.png" alt="logo">
+          </a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="altisia.html">الصفحة الرئيسية</a></li>
+                <li><a href="about.html">حول</a></li>
+                <li><a href="blog.html">مدونة</a></li>
+                <li><a href="course.html">الدورات</a></li>
+                <li><a href="contact.html">اتصال</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+         
+        
+        </nav>
+        
+        <h1>اتصل بنا</h1>
+            </section>
+            <!--end header section -->
+
+
+<!-- section for the map -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.384290349388!2d-7.997731290003114!3d31.650704474046652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef68a86de871%3A0x63471526178e2604!2sOlympia%20institut!5e0!3m2!1sfr!2sma!4v1743863618133!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+
+<!-- another section -->
+<section class="contact-us">
+  <div class="row">
+
+<div class="contact-col">
+
+
+  <div>
+    <i class="fa fa-home"></i>
+    <span>
+<h5>
+  شارع فلسطين
+</h5>
+  <p>مراكش 40000</p> 
+
+    </span>
+  </div>
+
+  <div>
+    <i class="fa fa-phone"></i>
+    <span>
+<h5>
++212-613998212
+</h5>
+  <p>من الإثنين إلى السبت، من الساعة 10 صباحًا حتى 6 مساءً</p> 
+
+    </span>
+  </div>
+
+  <div>
+    <i class="fa fa-envelope-o"></i>
+    <span>
+<h5>
+  olmpiya@gmail.com
+</h5>
+  <p>راسلنا عبر البريد الإلكتروني</p> 
+
+    </span>
+  </div>
+
+
+</div>
+
+<div class="contact-col">
+<form action="form-handler.php" method="post">
+  <input type="text"name="name" placeholder="أدخل اسمك" required>
+  <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+  <input type="text" name="subject" placeholder="أدخل الموضوع" required>
+  <textarea   name="message" rows="8" placeholder="رسالة" required></textarea>
+  <button type="submit" class="hero-btn red-btn">أرسل رسالة</button>
+ 
+</form>
+</div>
+  </div>
+</section>
+
+
+
+
+
+<!-- footer -->
+<section class="footer">
+  <h4>اتصل بنا</h4>
+    <p>نحن هنا للإجابة على جميع استفساراتكم وتقديم الدعم الذي تحتاجونه. سواء كان لديكم سؤال، اقتراح، أو ترغبون بالتواصل معنا لأي سبب، لا تترددوا في مراسلتنا. يمكنكم الاتصال بنا عبر البريد الإلكتروني، أو إرسال رسالة مباشرة من خلال النموذج الموجود في الأسفل. نسعد دائماً بخدمتكم!
+
+    </p>
+    <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instgram"></i>
+    <i class="fa fa-linkden"></i>
+    
+    </div>
+<p>موقع إلكتروني من تصميم عبد الفتاح <i class="fa fa-heart-o"></i>عبد الفتاح <i class="fa fa-heart-o"></i></p>
+    </section>
+
+
+    
+    <!-- javaScipt toggle Menu -->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function ShowMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px"
+    }
+  </script>
+    
+</body>
+</html>
